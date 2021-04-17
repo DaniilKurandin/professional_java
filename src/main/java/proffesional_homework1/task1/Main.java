@@ -7,7 +7,8 @@ public class Main {
         Car[] cars = {new Car("Lexus", 3000, 210, "Black"),
                 new Car("BMW", 3000, 210, "Green"),
                 new Car("Porsche", 7000, 190, "White"),
-                new Car("Subaru", 3088, 250, "Yellow")};
+                new Car("Subaru", 3088, 250, "Yellow"),
+                new Car("Mercedes", 3500, 199, "Blue")};
 
         Arrays.sort(cars);
 
