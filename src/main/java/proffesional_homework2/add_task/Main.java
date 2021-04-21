@@ -25,6 +25,10 @@ public class Main {
 
         Collections.sort(list);
 
-        System.out.println(list);
+        Set<String> uniqueList = new HashSet<>(list);
+
+        System.out.println("Уникальные строки: " + uniqueList);
+
+
     }
 }
