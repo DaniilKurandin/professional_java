@@ -3,7 +3,7 @@ package proffesional_homework7.task2;
 import java.lang.reflect.Member;
 import java.util.Scanner;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String red = (char) 27 + "[31m";
