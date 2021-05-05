@@ -9,8 +9,9 @@ public class Main {
 
         try {
             Method method = cl.getDeclaredMethod("mathSum", int.class, int.class);
-            MyAnno myAnno = method.getAnnotation(MyAnno.class);
-            m.mathSum(myAnno.num1(), myAnno.num2());
+            MyAnno2 myAnno2 = method.getAnnotation(MyAnno2.class);
+            MyAnno[] myAnnos = myAnno2.value();
+            m.mathSum(myAnnos[0].num1(), myAnnos[1].num2());
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
