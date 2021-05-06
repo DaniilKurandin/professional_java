@@ -7,8 +7,8 @@ import java.io.ObjectOutput;
 
 public class Car implements Externalizable {
     String name;
-    static int price;
-    static int age;
+    static int price = 15;
+    static int age = 2;
 
     public Car(){}
 
@@ -19,8 +19,7 @@ public class Car implements Externalizable {
     @Override
     public String toString() {
         return "Car{" +
-                "name='" + name + '\'' +
-                '}';
+                "name= " + name + ", price = " + price + ", age = " + age + "}";
     }
 
     public String getName() {
@@ -50,10 +49,14 @@ public class Car implements Externalizable {
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(name);
+        out.writeInt(price);
+        out.writeInt(age);
     }
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         name = (String) in.readObject();
+        price = in.readInt();
+        age = in.readInt();
     }
 }
