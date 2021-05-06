@@ -1,7 +1,5 @@
 package professional_homework9.task3;
 
-import professional_homework9.task2.Animal;
-
 import java.io.*;
 
 public class Main {
